@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <SignAssembly>False</SignAssembly>
+    <AssemblyOriginatorKeyFile>C:\Users\Volkan\Desktop\WorkSpace\Github\g-traverse\sgKey.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>True</DelaySign>
+    <Copyright>ArjanVolk</Copyright>
+    <PackageTags>Graph; </PackageTags>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32203.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{233975EB-066A-4F06-A5F4-E41032EDDADA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{65313862-D1D1-4624-AC00-124B3654A476}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GTraverse.Domain", "src\GTraverse.Domain\GTraverse.Domain.csproj", "{B7F04EB1-0533-43EA-B888-6A566793D7B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GTraverse.ToolKit", "src\GTraverse.ToolKit\GTraverse.ToolKit.csproj", "{AA2F417F-BF7C-4026-BBD9-DBE074A24AE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GTraverse.ToolKit.UnitTests", "tests\GTraverse.ToolKit.UnitTests\GTraverse.ToolKit.UnitTests.csproj", "{7D158C5B-E900-4732-AF5A-42B5BF60E2D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5ECAC423-00A4-4F97-BABF-CCB8A050B509}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7F04EB1-0533-43EA-B888-6A566793D7B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7F04EB1-0533-43EA-B888-6A566793D7B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7F04EB1-0533-43EA-B888-6A566793D7B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7F04EB1-0533-43EA-B888-6A566793D7B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA2F417F-BF7C-4026-BBD9-DBE074A24AE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA2F417F-BF7C-4026-BBD9-DBE074A24AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA2F417F-BF7C-4026-BBD9-DBE074A24AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA2F417F-BF7C-4026-BBD9-DBE074A24AE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D158C5B-E900-4732-AF5A-42B5BF60E2D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D158C5B-E900-4732-AF5A-42B5BF60E2D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D158C5B-E900-4732-AF5A-42B5BF60E2D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D158C5B-E900-4732-AF5A-42B5BF60E2D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B7F04EB1-0533-43EA-B888-6A566793D7B5} = {233975EB-066A-4F06-A5F4-E41032EDDADA}
+		{AA2F417F-BF7C-4026-BBD9-DBE074A24AE5} = {233975EB-066A-4F06-A5F4-E41032EDDADA}
+		{7D158C5B-E900-4732-AF5A-42B5BF60E2D1} = {65313862-D1D1-4624-AC00-124B3654A476}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C50A30DC-6B8E-4CF8-A028-58CF779AF295}
+	EndGlobalSection
+EndGlobal
