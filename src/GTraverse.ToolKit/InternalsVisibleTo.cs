@@ -6,5 +6,13 @@ namespace GTraverse.ToolKit
 {
     internal class InternalsVisibleTo
     {
+        public void Volkan()
+        {
+            Ardahan();
+        }
+
+        public void Ardahan()
+        {
+        }
     }
 }
