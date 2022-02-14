@@ -10,6 +10,7 @@ using System.IO;
 using System;
 using System.Linq;
 using Microsoft.Build.Locator;
+using System.Reflection;
 
 namespace GTraverse.ToolKit
 {
@@ -20,8 +21,8 @@ namespace GTraverse.ToolKit
         public void Find(string methodName)
         {
             MSBuildLocator.RegisterDefaults();
-
-            string solutionPath = @"C:\Users\t-mac\Desktop\g-traverse\GTraverse.sln";
+            var assembly = Assembly.GetEntryAssembly();
+            string solutionPath = assembly.Location.Replace("tests\\GTraverse.ToolKit.UnitTests\\bin\\Debug\\net6.0\\testhost.dll","GTraverse.sln");
             var msWorkspace = MSBuildWorkspace.Create();
             msWorkspace.WorkspaceFailed += MsWorkspace_WorkspaceFailed;
 
@@ -40,13 +41,13 @@ namespace GTraverse.ToolKit
                     var model = document.GetSemanticModelAsync().Result;
 
                     var methodInvocation = document.GetSyntaxRootAsync().Result;
-                    MethodDeclarationSyntax node = null;
+                    MethodDeclarationSyntax? node = null;
                     try
                     {
-                        var descendants = methodInvocation.DescendantNodes();
+                        var descendants = methodInvocation!.DescendantNodes();
                         descendants = descendants.Where(x => x.IsKind(Microsoft.CodeAnalysis.CSharp.SyntaxKind.MethodDeclaration));
                         node = descendants.Select(x => (MethodDeclarationSyntax)x).FirstOrDefault(x => x.Identifier.Text == methodName);
-                        var a = node.Body.DescendantNodes();
+                        var a = node!.Body!.DescendantNodes();
                         if (node == null)
                             continue;
                     }
